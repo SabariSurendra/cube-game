@@ -24,7 +24,7 @@ const accelerationY = -0.0035; // Gravity
 let score = 0;
 const canvas = document.getElementById("canvas");
 const scene = new THREE.Scene();
-scene.background = new THREE.TextureLoader().load("/images/space.jpg");
+scene.background = new THREE.TextureLoader().load("images/space.jpg");
 const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
