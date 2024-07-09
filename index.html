@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="lives-container">
+    <img src="/images/heart.png" alt="lives" id="heart" class="hide heart">
+  </div>
+  <div class="powerUp">
+    <img id="scoreMultiplierImg" src="images/scoreMultiplier.png" alt="scoreMultiplier">
+    <img id="invisibilityImg" src="images/invisibility.png" alt="invisibility">
+    <img id="doubleJumpImg" src="images/doubleJump.png" alt="doubleJump">
+  </div>
+  <div class="playNpause">
+    <div class="container">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+  <script type="importmap" async>
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.150.1/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"
+      }
+    }
+		</script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/postprocessing/EffectComposer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/postprocessing/RenderPass.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/postprocessing/ShaderPass.js"></script> -->
+  <!-- Include other post-processing passes as needed -->
+  <script type="module" src="main.js" defer></script>
+</body>
+
+</html>
